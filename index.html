@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meeting Minutes</title>
+        <link rel="icon" href="media/favicon.png" type="image/png"/>
+    </head>
+    <body>
+        <header>
+            <h1>Meeting Minutes</h1>
+            <p>
+                <b>Topic:</b> Project Report <br>
+                <b>Date:</b> 14 April 2024 <br>
+                <b>Time:</b> <span class="time">10:00AM</span> - <span class="time">11:00AM</span><br>
+                <b>Location:</b> Conference Room D <br>
+                <b>Attendees: </b> <br>
+                <ul>
+                    <li>John Doe (Chairperson)</li>
+                    <li>Jane Smith</li>
+                    <li>Michael Johnson</li>
+                    <li>Emily Brown</li>
+                </ul>
+                <b>Agenda:</b> <br>
+            </p>
+            <nav class="menu">
+                <ol>
+                    <li><a href="#progress">Review of Project Progress</a></li>
+                    <li><a href="#deadlines">Upcoming Deadlines</a></li>
+                    <li><a href="#next">Next Steps</a></li>
+                </ol>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <div></div>
+            <span></span>
+            <section id="progress">
+                <h2>Review of Project Progress</h2>
+                <ul>
+                    <li>John provided an overview of the project progress, highlighting completed tasks and milestones reached.</li>
+                        <li>we have <em>officially</em> finalized the idea for our project</li>
+                    <li>Jane and Michael shared updates on their respective tasks, noting any challenges encountered.</li>
+                </ul>
+            </section>
+            <section id="deadlines">
+                <h2>Upcoming Deadlines</h2>
+                <ul>
+                    <li>Emily reminded the team of the upcoming deadline for the first draft of the proposal.</li>
+                        <li>We want to have an <i>avant-garde</i> appeal to potential clients</li>
+                        <li>The propsal must be completed before moving forward and so must be completed <strong>as soon as possible!</strong></li>
+                    <li>Discussion ensued regarding resource allocation to meet the deadline</li>
+                        <video controls width="640" height="360">
+                            <source src="media/cse110_lab2_vid.mp4" type="video/mp4"/>
+                            Download the <a href="media/cse110_lab2_vid.mp4">MP4</a> video
+                        </video>
+                        <audio controls>
+                            <source src="media/cse110_lab2_vid.mp4" type="audio/mp4"/>
+                            Download the <a href="media/cse110_lab2_vid.mp4">MP4</a> audio
+                        </audio>
+                </ul>
+            </section>
+            <section id="next">
+                <h2>Next Steps</h2>
+                <ul>
+                    <li>The team agreed to schedule a follow-up meeting to finalize the project proposal</li>
+                    <li>Action items were assigned to each team member, including research tasks and draft preparation</li>
+                </ul>
+                <h3>Action Items</h3>
+                <details>
+                    <summary>Task List</summary>
+                    <ul>
+                        <li><b>John:</b> Coordinate scheduling for the next meeting.</li>
+                        <li><b>Jane:</b> Research industry trends for inclusion in the project proposal.</li>
+                        <li><b>Michael:</b> Prepare draft sections for the proposal outline.</li>
+                        <li><b>Emily:</b> Compile meeting minutes and distribute to all attendees.</li>
+                    </ul>
+                </details>
+            </section>
+        </main>
+        <hr>
+        <footer>
+            <p>
+                <b>Next Meeting:</b> 20 April 2024, <span class="time">10:00AM</span>, Conference Room B
+            </p>
+            <img class="conference_room_pic" src="media\conference_room.jpg" alt="Conference Room B Location" width="200" height="150">
+            <h2>Contact, Commment, or Submit Feedback</h2>
+            <form action="" method="get" class="form_input">
+                <div class="form_input">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" required />
+                </div>
+                <div class="form_input">
+                    <label for="today">Date:</label>
+
+                    <input type="date" name="today" id="today" value="2024-04-16" />
+                </div>
+                <div class="form_input">
+                    <fieldset>
+                        <legend>How do you feel about the page?</legend>
+                        <input type="radio" id="great">
+                        <label for="great">Great!</label><br>
+                        <input type="radio" id="good">
+                        <label for="good">Good</label><br>
+                        <input type="radio" id="neutral">
+                        <label for="neutral">Neutral</label><br>
+                        <input type="radio" id="bad">
+                        <label for="bad">Bad</label><br>
+                        <input type="radio" id="horrible">
+                        <label for="horrible">Horrible!</label>
+                    </fieldset>
+                </div>
+                <div class="form_input">
+                    <label for="rating">How do you rate our page:</label>
+                    <select name="ratings" id="rating">
+                        <option value="">--Please Choose an Option--</option>
+                        <option value="1">1/5</option>
+                        <option value="2">2/5</option>
+                        <option value="3">3/5</option>
+                        <option value="4">4/5</option>
+                        <option value="5">5/5</option>
+                    </select>
+                </div>
+                <div class="form_input">
+                    <label for="my_duration">How long did it take to read:</label>
+                    <input list="durations" id="my_duration" name="my_duration"/>
+                    <datalist id="durations">
+                        <option value="0 minutes"></option>
+                        <option value="15 minutes"></option>
+                        <option vlaue="30 minutes"></option>
+                        <option value="45 mintues"></option>
+                        <option value="1 hour"></option>
+                    </datalist>
+                </div>
+                <div class="form_input">
+                    <label for="comment">Let us know what you think!</label><br>
+                    <textarea id="comment" name="comment" rows="10" cols="50">
+                        Type your comment/feedback here...
+                    </textarea>
+                </div>
+                <div class="form_input">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Subscribe to Meeting Minutes</label>
+                </div>
+                <div class="form_input">
+                    <button class="submit" type="submit">Submit</button>
+                </div>
+            </form>
+            
+        </footer>
+    </body>
+</html>
