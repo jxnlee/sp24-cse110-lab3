@@ -11,8 +11,11 @@
                 font-family: "Montserrat";
                 src: url("media/Montserrat-VariableFont_wght.ttf") format("truetype");
             }
+            :root {
+                --custom-font: "Montserrat", sans-serif;
+            }
             * {
-                font-family: "Montserrat";
+                font-family: var(--custom-font);
             }
         </style>
     </head>
