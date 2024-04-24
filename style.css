@@ -1,3 +1,12 @@
+/*makes responsive to devices with smaller screens*/
+@media (min-width: 900px)
+{
+    header > section{
+        font-size:smaller;
+        height: 150px;
+    }
+}
+
 /*make background header to dark blue*/
 header {
     background-color: #00008b;
@@ -11,10 +20,9 @@ hr {
 /*define properties for sections in the header*/
 header > section {
     display:flex;
-    height:150px;
     flex-direction: column;
     flex-wrap:wrap;
-    align-content: space-evenly;
+    align-content: space-around;
 }
 
 
@@ -53,6 +61,10 @@ header nav#navigation {
     border-color:lightblue;
     border-radius:0;
     border-width:5px;
+
+    &:hover {
+        border-color: purple;
+    }
 }
 
 /*define hover action for links*/
@@ -112,6 +124,10 @@ h2 {
 /*define background color for task list*/
 summary + ul {
     background-color: yellow;
+}
+
+.form_input .form_input:has(fieldset) {
+    background-color: lightcoral;
 }
 
 /*define border for type of submit elements*/
