@@ -2,11 +2,38 @@ header {
     background-color: #00008b;
 }
 
+header h1 {
+    padding: 1rem 1rem 1rem 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:5px;
+    margin-bottom:5px;
+
+    border-radius:40%;
+    border-style:ridge;
+    border-width:5px;
+    border-color:aqua;
+}
+
 header h1, header p, header ul {
     color: rgb(248, 245, 245);
 }
-header nav * {
-    color: color(display-p3 0 1 0);
+
+header nav#navigation {
+    height: 6em;
+    min-width:300px;
+    max-width:450px;
+
+    border-style:outset;
+    border-color:lightblue;
+    border-radius:0;
+    border-width:5px;
+}
+
+header nav ol li a, header nav ol li {
+    color: color(display-p3 0 1 0); 
+    border:1px solid yellowgreen;
+    width: 75%;
 }
 
 main {
@@ -20,4 +47,16 @@ h2 {
 
 footer {
     background-color: color-mix(in lch, plum 40%, pink);
+}
+
+footer h2 {
+    margin:auto;
+}
+
+footer form {
+    margin: 0pt 10pt 2mm 2mm;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
