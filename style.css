@@ -1,8 +1,25 @@
+/*make background header to dark blue*/
 header {
     background-color: #00008b;
 }
 
-header h1 {
+/* make the hr element no longer display*/
+hr {
+    display: none;
+}
+
+/*define properties for sections in the header*/
+header > section {
+    display:flex;
+    height:150px;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-content: space-evenly;
+}
+
+
+/*flexbox with header meeting-info section*/
+header > h1#meeting-info {
     padding: 1rem 1rem 1rem 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -15,11 +32,19 @@ header h1 {
     border-color:aqua;
 }
 
-header h1, header p, header ul {
+/*define color for text in header*/
+header > h1, header p.info, header ul {
     color: rgb(248, 245, 245);
 }
 
+/*define flex property for p elements in header*/
+header p {
+    align-self: flex-end;
+}
+
+/*define properties for navigation in header*/
 header nav#navigation {
+    position: relative;
     height: 6em;
     min-width:300px;
     max-width:450px;
@@ -30,29 +55,93 @@ header nav#navigation {
     border-width:5px;
 }
 
-header nav ol li a, header nav ol li {
+/*define hover action for links*/
+a:hover {
+    background-color: grey;
+}
+
+/*define header navigation properites*/
+header a, header ol > li {
     color: color(display-p3 0 1 0); 
     border:1px solid yellowgreen;
     width: 75%;
 }
 
+/*define main section properties*/
 main {
+    display: grid;
     background-color:  hsl(250, 22%, 67%);
-    color: color-mix(in srgb, darkorange 80%, yellow)
+    color: color-mix(in srgb, darkorange 80%, yellow);
+
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1em;
 }
+
+/*define progress section grid properties*/
+section#progress {
+    grid-row: 1 / 1;
+    grid-column: 1 / 2;
+    justify-self: center;
+    align-self: center;
+}
+
+/*define deadlines section grid properities*/
+section#deadlines {
+    grid-row: 2 / 2;
+    grid-column: 1 / 1;
+}
+
+/*define next section grid properties*/
+section#next {
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
+}
+/*define section header position*/
+section h2 {
+    position:sticky;
+    top: 0px;
+}
+
+/*define all header colors and text styling*/
 h2 {
     color: blue;
     text-decoration: underline;
 }
 
+/*define background color for task list*/
+summary + ul {
+    background-color: yellow;
+}
+
+/*define border for type of submit elements*/
+[type="submit"]{
+    border: 10px outset grey;
+}
+
+/*define background color for footer section*/
 footer {
     background-color: color-mix(in lch, plum 40%, pink);
 }
 
+/*define margin for footer header*/
 footer h2 {
     margin:auto;
 }
 
+/*define display property for form inputs next to each other*/
+.form_input ~ .form_input {
+    display: inline-block;
+    width: 40%;
+}
+
+/*define action after submit button*/
+button.submit:active {
+    background-color: gold;
+    border-color: darkgoldenrod;
+}
+
+/*define footer form properties*/
 footer form {
     margin: 0pt 10pt 2mm 2mm;
     padding-left: 5vw;
